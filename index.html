@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nadan Firewall | Next-Gen On-Device Android Cyber Sentinel</title>
+  <meta name="description" content="Next-Gen Zero-Trust Android Firewall & Social Engineering Trojan Shield. 100% on-device packet filtering with zero telemetry.">
+  <link rel="icon" type="image/png" href="app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0a0e14;
+      --card-bg: rgba(16, 23, 34, 0.75);
+      --card-border: rgba(0, 229, 255, 0.15);
+      --primary-cyan: #00e5ff;
+      --primary-green: #00e676;
+      --accent-orange: #ff9100;
+      --shield-red: #ff334b;
+      --text-main: #f0f6fc;
+      --text-muted: #8b949e;
+      --glow: 0 0 25px rgba(0, 229, 255, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 15% 20%, rgba(0, 230, 118, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 60%, rgba(0, 229, 255, 0.08) 0%, transparent 40%);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.25rem;
+    }
+    .brand img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      margin-left: 20px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--primary-cyan);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 70px 0 40px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      background: rgba(0, 229, 255, 0.1);
+      border: 1px solid rgba(0, 229, 255, 0.3);
+      color: var(--primary-cyan);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #00e676 0%, #00e5ff 60%, #3d91ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto 36px;
+      color: var(--text-muted);
+      font-size: 1.15rem;
+    }
+
+    /* CTA Buttons & QR */
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #00e676, #00c853);
+      color: #052410;
+      box-shadow: 0 4px 20px rgba(0, 230, 118, 0.4);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 28px rgba(0, 230, 118, 0.6);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--primary-cyan);
+    }
+
+    /* QR Code Card */
+    .qr-card {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 12px 20px;
+      border-radius: 14px;
+      margin-top: 10px;
+      backdrop-filter: blur(10px);
+    }
+    .qr-card img {
+      width: 72px;
+      height: 72px;
+      border-radius: 8px;
+      background: #fff;
+      padding: 4px;
+    }
+    .qr-text {
+      text-align: left;
+    }
+    .qr-text strong {
+      display: block;
+      font-size: 0.95rem;
+      color: #fff;
+    }
+    .qr-text span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Device Preview Showcase */
+    .showcase {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0 80px;
+    }
+    .device-mockup {
+      width: 320px;
+      border-radius: 36px;
+      padding: 10px;
+      background: #1e2633;
+      border: 3px solid rgba(0, 229, 255, 0.3);
+      box-shadow: var(--glow), 0 20px 50px rgba(0,0,0,0.8);
+      position: relative;
+    }
+    .device-mockup img {
+      width: 100%;
+      border-radius: 28px;
+      display: block;
+    }
+
+    /* Feature Cards */
+    .features-section {
+      padding: 60px 0;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .section-title h2 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .section-title p {
+      color: var(--text-muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 30px;
+      backdrop-filter: blur(8px);
+      transition: transform 0.25s, border-color 0.25s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary-cyan);
+    }
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    .card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* Install steps */
+    .steps-section {
+      padding: 60px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 36px;
+    }
+    .step-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 24px;
+      position: relative;
+    }
+    .step-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--primary-cyan);
+      color: #051620;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .step-item h4 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    .step-item p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Security specs */
+    .specs-box {
+      margin: 60px 0;
+      padding: 24px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: #a5d6a7;
+    }
+    .specs-box span {
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 40px 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: var(--primary-cyan);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Navbar -->
+    <nav>
+      <a href="#" class="brand">
+        <img src="app-icon.png" alt="Nadan Firewall Logo">
+        <span>Nadan Firewall</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#install">Install Guide</a>
+        <a href="https://github.com/amdsree/nadan-firewall-releases" target="_blank">GitHub</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="badge">
+        <span>🛡️ v1.3.4 Production Release</span>
+        <span>•</span>
+        <span>Target SDK 36 (Android 16 Ready)</span>
+      </div>
+      <h1>Next-Gen On-Device <br><span class="gradient-text">Zero-Trust Android Firewall</span></h1>
+      <p>
+        Engineered for total digital privacy. Intercepts local packet traffic, sinks social engineering scam APKs, blocks 79,999 tracker domains, and guards against unauthorized VPN displacement — 100% locally with zero telemetry.
+      </p>
+
+      <div class="cta-group">
+        <a href="https://github.com/amdsree/nadan-firewall-releases/releases/latest/download/NadanFirewall-v1.3.4.apk" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          Download APK (v1.3.4)
+        </a>
+        <a href="https://github.com/amdsree/nadan-firewall-releases" target="_blank" class="btn btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          Source Code
+        </a>
+      </div>
+
+      <!-- Scan to Install on Phone -->
+      <div>
+        <div class="qr-card">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://github.com/amdsree/nadan-firewall-releases/releases/latest/download/NadanFirewall-v1.3.4.apk" alt="Scan to Download APK">
+          <div class="qr-text">
+            <strong>Scan to Download on Android</strong>
+            <span>Point phone camera to install directly</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phone Preview Mockup -->
+    <div class="showcase">
+      <div class="device-mockup">
+        <img src="screenshot.png" alt="Nadan Firewall App Interface">
+      </div>
+    </div>
+
+    <!-- Core Features -->
+    <section id="features" class="features-section">
+      <div class="section-title">
+        <h2>Zero-Trust Architecture</h2>
+        <p>Built from the ground up to operate without cloud dependencies or tracking.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Local Loopback Tunnel</h3>
+          <p>Filters all TCP, UDP, and DNS traffic in volatile memory on-device. No traffic ever exits to remote proxy servers.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🚨</div>
+          <h3>Social Engineering Trojan Shield</h3>
+          <p>Instantly quarantines dangerous APK scams (Wedding Cards, Court summons, fake e-Challan, KSEB power cut notices, predatory loan apps).</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🚫</div>
+          <h3>79,999-Domain Threat Directory</h3>
+          <p>Blocks malicious ad networks, trackers, and telemetry backdoors with scheduled on-device updates and 1-tap ad snoozing.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🔐</div>
+          <h3>Anti-Hijack & Disconnection Guard</h3>
+          <p>Detects rogue applications attempting to displace your firewall or disable protection, guiding you to restore the tunnel instantly.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Zero Battery Drain (0.0% Idle)</h3>
+          <p>Engineered with non-blocking I/O buffers for seamless 24/7 background operation without waking up the CPU unnecessarily.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🔄</div>
+          <h3>Built-In GitHub Auto-Updater</h3>
+          <p>Automatically checks for new releases on GitHub and delivers 1-tap background updates without relying on Google Play.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation Steps -->
+    <section id="install" class="steps-section">
+      <div class="section-title">
+        <h2>Quick 3-Step Installation</h2>
+        <p>No root required. Compatible with Android 8.0 through Android 16.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <h4>Download APK</h4>
+          <p>Tap the green download button above or scan the QR code from your phone's browser.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <h4>Allow & Install</h4>
+          <p>Tap the downloaded file. When prompted by Android, tap "Allow from this source" and press <strong>Install</strong>.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <h4>Turn On Protection</h4>
+          <p>Open Nadan Firewall and tap <strong>Turn On</strong>. Accept Android's native VPN permission prompt to start filtering.</p>
+        </div>
+      </div>
+
+      <!-- Security Specs -->
+      <div class="specs-box">
+        <div><strong>Package ID:</strong> org.nadan.firewall</div>
+        <div><strong>Version:</strong> 1.3.4 (Build 35)</div>
+        <div><strong>Signing Key:</strong> Official Release Key (SHA-256 Verified)</div>
+        <div><strong>Telemetry:</strong> 0% (Strictly Local Volatile Memory)</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Nadan Firewall is an independent, community-driven open-source cyber defense project.</p>
+      <p style="margin-top: 8px;">
+        Released under the Apache-2.0 License • <a href="https://github.com/amdsree/nadan-firewall-releases" target="_blank">View on GitHub</a>
+      </p>
+    </footer>
+  </div>
+
+</body>
+</html>
