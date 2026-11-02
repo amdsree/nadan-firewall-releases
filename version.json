@@ -1,8 +1,8 @@
 {
-  "latestVersion": "1.3.6",
-  "versionCode": 37,
-  "downloadUrl": "https://github.com/amdsree/nadan-firewall-releases/releases/latest/download/NadanFirewall-v1.3.6.apk",
+  "latestVersion": "1.3.7",
+  "versionCode": 38,
+  "downloadUrl": "https://github.com/amdsree/nadan-firewall-releases/releases/latest/download/NadanFirewall-v1.3.7.apk",
   "releasePage": "https://github.com/amdsree/nadan-firewall-releases/releases/latest",
   "website": "https://amdsree.github.io/nadan-firewall-releases/",
-  "changelog": "High-Speed Hardware Passthrough (200+ Mbps) & Dynamic DNS Acceleration. Zero-loss line speed for allowed apps with Social Engineering Trojan Quarantine Shield."
+  "changelog": "Instant Quarantine & Outbound Connection Prompts. Zero-delay sideload quarantine, real-time interactive prompts on connection attempts, WakeLock background execution, and 24/7 anti-kill persistence."
 }
