@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nadan Firewall | Next-Gen On-Device Android Cyber Sentinel</title>
-  <meta name="description" content="Next-Gen Zero-Trust Android Firewall & Social Engineering Trojan Shield. 100% on-device packet filtering with zero telemetry.">
+  <title>Nadan Firewall | Zero-Trust Cyber Sentinel for Android & Windows</title>
+  <meta name="description" content="Next-Gen Zero-Trust Firewall & Social Engineering Trojan Shield for Android and Windows. 100% on-device packet filtering with zero telemetry. Free app by Sreejith BS.">
   <link rel="icon" type="image/png" href="app-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +16,13 @@
       --card-border: rgba(0, 229, 255, 0.15);
       --primary-cyan: #00e5ff;
       --primary-green: #00e676;
+      --accent-blue: #00b4d8;
       --accent-orange: #ff9100;
       --shield-red: #ff334b;
       --text-main: #f0f6fc;
       --text-muted: #8b949e;
       --glow: 0 0 25px rgba(0, 229, 255, 0.25);
+      --glow-win: 0 0 25px rgba(0, 180, 216, 0.3);
     }
 
     * {
@@ -69,16 +71,29 @@
       border-radius: 50%;
       box-shadow: 0 0 12px rgba(0, 229, 255, 0.4);
     }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
     .nav-links a {
       color: var(--text-muted);
       text-decoration: none;
       font-weight: 500;
       font-size: 0.95rem;
-      margin-left: 20px;
       transition: color 0.2s;
     }
     .nav-links a:hover {
       color: var(--primary-cyan);
+    }
+    .nav-badge-win {
+      background: rgba(0, 180, 216, 0.15);
+      border: 1px solid rgba(0, 180, 216, 0.4);
+      color: #00e5ff !important;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-weight: 600 !important;
     }
 
     /* Hero Section */
@@ -99,6 +114,11 @@
       font-weight: 600;
       margin-bottom: 24px;
     }
+    .badge-win {
+      background: rgba(0, 180, 216, 0.12);
+      border-color: rgba(0, 180, 216, 0.35);
+      color: #38bdf8;
+    }
     .hero h1 {
       font-size: clamp(2.4rem, 5vw, 3.8rem);
       font-weight: 800;
@@ -111,8 +131,13 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    .gradient-text-win {
+      background: linear-gradient(135deg, #38bdf8 0%, #00b4d8 50%, #00e5ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
     .hero p {
-      max-width: 680px;
+      max-width: 720px;
       margin: 0 auto 36px;
       color: var(--text-muted);
       font-size: 1.15rem;
@@ -131,7 +156,7 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      padding: 16px 32px;
+      padding: 16px 30px;
       border-radius: 12px;
       font-weight: 700;
       font-size: 1.05rem;
@@ -147,6 +172,16 @@
     .btn-primary:hover {
       transform: translateY(-2px);
       box-shadow: 0 6px 28px rgba(0, 230, 118, 0.6);
+    }
+    .btn-windows {
+      background: linear-gradient(135deg, #00b4d8, #0284c7);
+      color: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 180, 216, 0.35);
+    }
+    .btn-windows:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 28px rgba(0, 180, 216, 0.55);
+      color: #ffffff;
     }
     .btn-secondary {
       background: rgba(255, 255, 255, 0.05);
@@ -244,6 +279,9 @@
       transform: translateY(-4px);
       border-color: var(--primary-cyan);
     }
+    .card-win:hover {
+      border-color: #38bdf8;
+    }
     .card-icon {
       font-size: 2rem;
       margin-bottom: 16px;
@@ -258,6 +296,78 @@
       color: var(--text-muted);
       font-size: 0.95rem;
       line-height: 1.6;
+    }
+
+    /* Windows Section */
+    .windows-container {
+      margin-top: 40px;
+      padding: 50px 30px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(16, 23, 34, 0.95) 0%, rgba(10, 14, 20, 0.95) 100%);
+      border: 1px solid rgba(0, 180, 216, 0.3);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4), var(--glow-win);
+    }
+    .win-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .win-logo-box {
+      width: 76px;
+      height: 76px;
+      border-radius: 20px;
+      background: rgba(0, 180, 216, 0.1);
+      border: 1px solid rgba(0, 180, 216, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      box-shadow: 0 0 25px rgba(0, 180, 216, 0.25);
+    }
+    .win-logo-box img {
+      width: 44px;
+      height: 44px;
+    }
+    .win-downloads-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin: 30px 0;
+    }
+    .dl-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(0, 180, 216, 0.25);
+      border-radius: 14px;
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      min-width: 290px;
+      flex: 1;
+      max-width: 440px;
+      transition: all 0.2s ease;
+    }
+    .dl-card:hover {
+      border-color: #38bdf8;
+      background: rgba(0, 180, 216, 0.06);
+      transform: translateY(-2px);
+    }
+    .dl-card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .dl-card-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.45;
     }
 
     /* Install steps */
@@ -290,6 +400,10 @@
       justify-content: center;
       margin-bottom: 16px;
     }
+    .step-num-win {
+      background: #38bdf8;
+      color: #032030;
+    }
     .step-item h4 {
       font-size: 1.1rem;
       margin-bottom: 8px;
@@ -302,7 +416,7 @@
 
     /* Security specs */
     .specs-box {
-      margin: 60px 0;
+      margin: 40px 0 20px;
       padding: 24px;
       border-radius: 12px;
       background: rgba(0, 0, 0, 0.4);
@@ -310,6 +424,10 @@
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.85rem;
       color: #a5d6a7;
+    }
+    .specs-box-win {
+      border-color: rgba(0, 180, 216, 0.25);
+      color: #7dd3fc;
     }
     .specs-box span {
       color: var(--text-muted);
@@ -339,15 +457,17 @@
         <span>Nadan Firewall</span>
       </a>
       <div class="nav-links">
+        <a href="#android">Android</a>
+        <a href="#windows" class="nav-badge-win">Windows Edition (v2.4.0)</a>
         <a href="#features">Features</a>
         <a href="#guides">User Guides</a>
-        <a href="#install">Install Guide</a>
-        <a href="https://github.com/amdsree/nadan-firewall-releases" target="_blank">GitHub</a>
+        <a href="https://github.com/amdsree/kerala-firewall" target="_blank">Windows Repo</a>
+        <a href="https://github.com/amdsree/nadan-firewall-releases" target="_blank">Releases Repo</a>
       </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero">
+    <!-- Hero / Android Section -->
+    <section id="android" class="hero">
       <div class="badge">
         <span>🛡️ v1.3.9 Production Release</span>
         <span>•</span>
@@ -355,26 +475,30 @@
       </div>
       <h1>Next-Gen On-Device <br><span class="gradient-text">Zero-Trust Android Firewall</span></h1>
       <p>
-        Engineered for total digital privacy. Intercepts local packet traffic, sinks social engineering scam APKs, blocks 79,999 tracker domains, and guards against unauthorized VPN displacement — 100% locally with zero telemetry.
+        Engineered for total digital privacy. Intercepts local packet traffic, sinks social engineering scam APKs, blocks 79,999 tracker domains, and guards against unauthorized VPN displacement, 100% locally with zero telemetry. Free app by Sreejith BS.
       </p>
 
       <div class="cta-group">
         <a href="https://github.com/amdsree/nadan-firewall-releases/releases/latest/download/NadanFirewall-v1.3.9.apk" class="btn btn-primary">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-          Download APK (v1.3.9)
+          Download APK (Android v1.3.9)
+        </a>
+        <a href="#windows" class="btn btn-windows">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+          Windows Edition (v2.4.0)
         </a>
         <a href="https://github.com/amdsree/nadan-firewall-releases" target="_blank" class="btn btn-secondary">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          Source Code
+          Releases GitHub
         </a>
       </div>
 
-      <!-- User Guides / ഉപയോക്തൃ സഹായി -->
-      <div id="guides" style="margin-top: 26px; margin-bottom: 24px; padding: 22px 24px; background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 16px; max-width: 640px; margin-left: auto; margin-right: auto; text-align: center; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);">
+      <!-- Android User Guides / ഉപയോക്തൃ സഹായി -->
+      <div id="guides" style="margin-top: 26px; margin-bottom: 24px; padding: 22px 24px; background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 16px; max-width: 680px; margin-left: auto; margin-right: auto; text-align: center; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);">
         <div style="font-size: 1.15rem; font-weight: 700; color: #10b981; margin-bottom: 8px; display: flex; align-items: center; justify-content: center; gap: 8px;">
-          <span>📖 Official User Guides & Manuals</span>
+          <span>📖 Official Android User Guides</span>
           <span>•</span>
-          <span>ഉപയോക്തൃ സഹായി</span>
+          <span>ആൻഡ്രോയിഡ് ഉപയോക്തൃ സഹായി</span>
         </div>
         <p style="font-size: 0.92rem; color: #94a3b8; margin-bottom: 16px; line-height: 1.5;">
           Simple, step-by-step instructions for everyday users in English and Malayalam. Learn how to control apps, stop ads, and stay safe from cyber scam APKs.
@@ -382,11 +506,11 @@
         <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
           <a href="Nadan_Firewall_User_Guide_EN.pdf" download class="btn" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 11px 20px; font-size: 0.92rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-            User Guide (English PDF)
+            Android Guide (English PDF)
           </a>
           <a href="Nadan_Firewall_User_Guide_ML.pdf" download class="btn" style="background: #059669; border: 1px solid #10b981; color: #fff; padding: 11px 20px; font-size: 0.92rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-            മലയാളം സഹായി (PDF)
+            മലയാളം സഹായി (Android PDF)
           </a>
         </div>
       </div>
@@ -410,10 +534,132 @@
       </div>
     </div>
 
-    <!-- Core Features -->
+    <!-- Windows Edition Section -->
+    <section id="windows" class="windows-container">
+      <div class="win-header">
+        <div class="win-logo-box">
+          <img src="windows-logo.png" alt="Windows Logo">
+        </div>
+        <div class="badge badge-win">
+          <span>💻 Windows Desktop Edition</span>
+          <span>•</span>
+          <span>v2.4.0 Pro Protection</span>
+          <span>•</span>
+          <span>Free app by Sreejith BS</span>
+        </div>
+        <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.2; margin-bottom: 14px;">
+          Nadan Firewall for <span class="gradient-text-win">Windows Desktop</span>
+        </h2>
+        <p style="max-width: 720px; color: var(--text-muted); font-size: 1.1rem;">
+          Native Windows cyber sentinel powered by the Windows Filtering Platform (WFP). Features an emergency Air-Gap Sandbox Killswitch, Preset Silent Whitelisting, Floating Desktop HUD, Pro-Level MSX Decoding Shield, and PIN-secured release updating.
+        </p>
+
+        <!-- Windows Download Cards -->
+        <div class="win-downloads-box">
+          <div class="dl-card">
+            <div class="dl-card-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#38bdf8"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+              Windows Setup (Installer)
+            </div>
+            <div class="dl-card-desc">
+              Recommended for Windows 10 & 11. Includes desktop shortcut, start menu entry, self-healing watchdog daemon, and uninstaller.
+            </div>
+            <a href="NadanFirewall_Setup.exe" download class="btn btn-windows" style="width: 100%; justify-content: center; margin-top: 6px; padding: 12px 20px;">
+              Download Setup (35.5 MB)
+            </a>
+          </div>
+
+          <div class="dl-card">
+            <div class="dl-card-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#00e5ff"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6 10H4v-4h10v4zm6-6H4V8h16v2z"/></svg>
+              Portable Edition (.zip)
+            </div>
+            <div class="dl-card-desc">
+              Zero installation required. Extract to any directory or USB drive and run NadanFirewall.exe directly with your saved profiles.
+            </div>
+            <a href="NadanFirewall_Portable.zip" download class="btn btn-secondary" style="width: 100%; justify-content: center; margin-top: 6px; padding: 12px 20px; border-color: rgba(0, 180, 216, 0.4); color: #38bdf8;">
+              Download Portable ZIP (41.3 MB)
+            </a>
+          </div>
+        </div>
+
+        <!-- Windows User Guides Box -->
+        <div style="margin-top: 10px; padding: 22px 24px; background: rgba(0, 180, 216, 0.08); border: 1px solid rgba(0, 180, 216, 0.35); border-radius: 16px; max-width: 680px; width: 100%; text-align: center; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);">
+          <div style="font-size: 1.15rem; font-weight: 700; color: #38bdf8; margin-bottom: 8px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <span>📖 Windows User Guides & Manuals</span>
+            <span>•</span>
+            <span>വിൻഡോസ് ഉപയോക്തൃ സഹായി</span>
+          </div>
+          <p style="font-size: 0.92rem; color: #94a3b8; margin-bottom: 16px; line-height: 1.5;">
+            Step-by-step PDF manuals explaining how to setup Preset Mode, use the Air-Gap Killswitch, configure your 6-digit Master PIN, and verify your connection security.
+          </p>
+          <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <a href="Nadan_Firewall_Windows_Guide_EN.pdf" download class="btn" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 11px 20px; font-size: 0.92rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+              Windows Guide (English PDF)
+            </a>
+            <a href="Nadan_Firewall_Windows_Guide_ML.pdf" download class="btn" style="background: #0284c7; border: 1px solid #38bdf8; color: #fff; padding: 11px 20px; font-size: 0.92rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+              മലയാളം സഹായി (Windows PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Windows Key Features Grid -->
+      <div class="grid" style="margin-top: 36px;">
+        <div class="card card-win">
+          <div class="card-icon">⚡</div>
+          <h3>Preset Silent Whitelist Mode</h3>
+          <p>Work uninterrupted without noisy popups. Automatically permits essential developer tools (VS Code, Cursor, Chrome, Slack) while silently blocking background telemetry.</p>
+        </div>
+
+        <div class="card card-win">
+          <div class="card-icon">🛑</div>
+          <h3>Pro-Level MSX Decoding Shield</h3>
+          <p>Active tamper defense intercepts Base64 obfuscated PowerShell execution (-enc), certutil payload decoders, mshta scripts, and rogue MSX unpacking binaries.</p>
+        </div>
+
+        <div class="card card-win">
+          <div class="card-icon">🛡️</div>
+          <h3>Air-Gap Sandbox Killswitch</h3>
+          <p>Instantly sever all inbound and outbound network connectivity at the Windows Filtering Platform kernel level during malware incidents or untrusted testing.</p>
+        </div>
+
+        <div class="card card-win">
+          <div class="card-icon">📊</div>
+          <h3>Floating Desktop HUD Widget</h3>
+          <p>A sleek, translucent desktop overlay displaying live upload/download bitrate, active packet counters, and instant killswitch toggle status.</p>
+        </div>
+
+        <div class="card card-win">
+          <div class="card-icon">🔒</div>
+          <h3>6-Digit Master PIN Lock</h3>
+          <p>Hardened security prevents unauthorized changes to firewall rules, mode switching, or uninstall attempts by non-privileged users or children.</p>
+        </div>
+
+        <div class="card card-win">
+          <div class="card-icon">🔄</div>
+          <h3>Clash-Free Release Updater</h3>
+          <p>Checks official GitHub releases, verifies installer checksums, coordinates safe handoffs with clean exit flags, and requires your Master PIN to update.</p>
+        </div>
+      </div>
+
+      <!-- Windows Specs Box -->
+      <div class="specs-box specs-box-win">
+        <div><strong>Edition:</strong> Nadan Firewall for Windows Desktop (v2.4.0 Pro)</div>
+        <div><strong>Author:</strong> Free app by Sreejith BS</div>
+        <div><strong>Architecture:</strong> Windows 10 / 11 (64-bit x86_64 Native)</div>
+        <div><strong>Kernel Engine:</strong> Windows Filtering Platform (WFP) & Windows Advanced Firewall API</div>
+        <div><strong>Shields:</strong> MSX Decoding Prevention, Obfuscated Script Trap, Air-Gap Killswitch</div>
+        <div><strong>Telemetry:</strong> 0% (Strictly Local Volatile Memory)</div>
+      </div>
+    </section>
+
+    <!-- Core Android Features -->
     <section id="features" class="features-section">
       <div class="section-title">
-        <h2>Zero-Trust Architecture</h2>
+        <h2>Android Zero-Trust Architecture</h2>
         <p>Built from the ground up to operate without cloud dependencies or tracking.</p>
       </div>
 
@@ -459,34 +705,60 @@
     <!-- Installation Steps -->
     <section id="install" class="steps-section">
       <div class="section-title">
-        <h2>Quick 3-Step Installation</h2>
-        <p>No root required. Compatible with Android 8.0 through Android 16.</p>
+        <h2>Quick Installation Guide</h2>
+        <p>Select your operating system and follow 3 simple steps.</p>
       </div>
 
-      <div class="steps-grid">
-        <div class="step-item">
-          <div class="step-num">1</div>
-          <h4>Download APK</h4>
-          <p>Tap the green download button above or scan the QR code from your phone's browser.</p>
+      <!-- Android Steps -->
+      <div style="margin-bottom: 30px;">
+        <h3 style="font-size: 1.3rem; margin-bottom: 16px; color: var(--primary-green);">Android Installation</h3>
+        <div class="steps-grid" style="margin-top: 0;">
+          <div class="step-item">
+            <div class="step-num">1</div>
+            <h4>Download APK</h4>
+            <p>Tap the green download button above or scan the QR code from your phone's browser.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-num">2</div>
+            <h4>Allow & Install</h4>
+            <p>Tap the downloaded file. When prompted by Android, tap "Allow from this source" and press <strong>Install</strong>.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-num">3</div>
+            <h4>Turn On Protection</h4>
+            <p>Open Nadan Firewall and tap <strong>Turn On</strong>. Accept Android's native VPN permission prompt to start filtering.</p>
+          </div>
         </div>
-        <div class="step-item">
-          <div class="step-num">2</div>
-          <h4>Allow & Install</h4>
-          <p>Tap the downloaded file. When prompted by Android, tap "Allow from this source" and press <strong>Install</strong>.</p>
-        </div>
-        <div class="step-item">
-          <div class="step-num">3</div>
-          <h4>Turn On Protection</h4>
-          <p>Open Nadan Firewall and tap <strong>Turn On</strong>. Accept Android's native VPN permission prompt to start filtering.</p>
+      </div>
+
+      <!-- Windows Steps -->
+      <div>
+        <h3 style="font-size: 1.3rem; margin-bottom: 16px; color: #38bdf8;">Windows Installation</h3>
+        <div class="steps-grid" style="margin-top: 0;">
+          <div class="step-item">
+            <div class="step-num step-num-win">1</div>
+            <h4>Download Windows Setup</h4>
+            <p>Download <strong>NadanFirewall_Setup.exe</strong> or extract <strong>NadanFirewall_Portable.zip</strong> to any folder.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-num step-num-win">2</div>
+            <h4>Run as Administrator</h4>
+            <p>Launch the application as Administrator to permit low-level Windows Filtering Platform (WFP) network packet inspection.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-num step-num-win">3</div>
+            <h4>Set Master PIN</h4>
+            <p>Create your 6-digit Master PIN, select your preferred defense mode, and monitor active connections via the floating desktop HUD.</p>
+          </div>
         </div>
       </div>
 
       <!-- Security Specs -->
       <div class="specs-box">
-        <div><strong>Package ID:</strong> org.nadan.firewall</div>
-        <div><strong>Version:</strong> 1.3.4 (Build 35)</div>
-        <div><strong>Signing Key:</strong> Official Release Key (SHA-256 Verified)</div>
-        <div><strong>Telemetry:</strong> 0% (Strictly Local Volatile Memory)</div>
+        <div><strong>Android Package:</strong> org.nadan.firewall (v1.3.9)</div>
+        <div><strong>Windows Executable:</strong> NadanFirewall.exe (v2.4.0 Pro)</div>
+        <div><strong>Author:</strong> Free app by Sreejith BS</div>
+        <div><strong>Telemetry:</strong> 0% (Strictly Local Volatile Memory on Both Platforms)</div>
       </div>
     </section>
 
@@ -494,7 +766,9 @@
     <footer>
       <p>Nadan Firewall is an independent, community-driven open-source cyber defense project.</p>
       <p style="margin-top: 8px;">
-        Released under the Apache-2.0 License • <a href="https://github.com/amdsree/nadan-firewall-releases" target="_blank">View on GitHub</a>
+        Free app by Sreejith BS • Released under the Apache-2.0 License • 
+        <a href="https://github.com/amdsree/kerala-firewall" target="_blank">Windows Repository</a> • 
+        <a href="https://github.com/amdsree/nadan-firewall-releases" target="_blank">Releases Repository</a>
       </p>
     </footer>
   </div>

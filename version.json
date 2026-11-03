@@ -6,5 +6,15 @@
   "website": "https://amdsree.github.io/nadan-firewall-releases/",
   "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_EN.pdf",
   "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_ML.pdf",
-  "changelog": "v1.3.9: High-Speed On-Device Ad Shield DNS resolver (76,000+ domains), always-visible YouTube / Chrome / Play Store with granular block enforcement, and RFC 8305 latency elimination for unthrottled 200+ Mbps line speed."
+  "changelog": "v1.3.9: High-Speed On-Device Ad Shield DNS resolver (76,000+ domains), always-visible YouTube / Chrome / Play Store with granular block enforcement, and RFC 8305 latency elimination for unthrottled 200+ Mbps line speed.",
+  "windows": {
+    "latestVersion": "2.4.0",
+    "versionCode": 240,
+    "setupDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup.exe",
+    "portableDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip",
+    "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf",
+    "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_ML.pdf",
+    "repository": "https://github.com/amdsree/kerala-firewall",
+    "changelog": "v2.4.0: Pro-Level MSX Decoding Shield, GitHub Release Updater with 6-digit PIN authorization, Preset Silent Whitelist Mode, and Air-Gap Sandbox Killswitch."
+  }
 }
