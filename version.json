@@ -1,8 +1,10 @@
 {
-  "latestVersion": "1.3.8",
-  "versionCode": 39,
-  "downloadUrl": "https://github.com/amdsree/nadan-firewall-releases/releases/latest/download/NadanFirewall-v1.3.8.apk",
+  "latestVersion": "1.3.9",
+  "versionCode": 40,
+  "downloadUrl": "https://github.com/amdsree/nadan-firewall-releases/releases/latest/download/NadanFirewall-v1.3.9.apk",
   "releasePage": "https://github.com/amdsree/nadan-firewall-releases/releases/latest",
   "website": "https://amdsree.github.io/nadan-firewall-releases/",
-  "changelog": "Rogue VPN & Dropper Malware Isolation: Real-time dynamic install tracking, automated e-challan & rogue VPN detection, permanent prompt suppression on user block, and zero-latency in-memory packet inspection."
+  "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_EN.pdf",
+  "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_ML.pdf",
+  "changelog": "v1.3.9: High-Speed On-Device Ad Shield DNS resolver (76,000+ domains), always-visible YouTube / Chrome / Play Store with granular block enforcement, and RFC 8305 latency elimination for unthrottled 200+ Mbps line speed."
 }
