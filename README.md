@@ -35,6 +35,12 @@ Native Windows cyber sentinel powered by the Windows Filtering Platform (WFP).
 * **[Windows Guide (English PDF)](https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf)**: Step-by-step user guide for Windows.
 * **[വിൻഡോസ് സഹായി (Malayalam PDF)](https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_ML.pdf)**: മലയാളം ഉപയോക്തൃ സഹായി.
 
+> **Note on SmartScreen & Browser Warnings:**
+> Nadan Firewall is a free, 100% community open-source project. Because we do not purchase costly proprietary EV certificates, Windows SmartScreen and Chrome classify newly compiled binaries as "Unrecognized" or "Not commonly downloaded".
+> - **SmartScreen:** Click **More info** &rarr; Click **Run anyway**.
+> - **Browser:** Click menu (`...`) &rarr; **Keep** &rarr; **Keep anyway**.
+> - **Or use Portable:** Download `NadanFirewall_Portable.zip` to run directly without installer warnings.
+
 **Windows Features:**
 * **Air-Gap Sandbox Killswitch**: Instant 1-click total network isolation.
 * **Preset Silent Whitelist Mode**: Pre-configured rules for developer apps (VS Code, Cursor, Chrome, Slack) while silently blocking background telemetry.
