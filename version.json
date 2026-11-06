@@ -1,12 +1,12 @@
 {
-  "latestVersion": "1.4.0",
-  "versionCode": 46,
-  "downloadUrl": "https://github.com/amdsree/nadan-firewall-releases/releases/download/v1.4.0/NadanFirewall-v1.4.0.apk",
-  "releasePage": "https://github.com/amdsree/nadan-firewall-releases/releases/tag/v1.4.0",
+  "latestVersion": "1.4.1",
+  "versionCode": 47,
+  "downloadUrl": "https://github.com/amdsree/nadan-firewall-releases/releases/download/v1.4.1/NadanFirewall-v1.4.1.apk",
+  "releasePage": "https://github.com/amdsree/nadan-firewall-releases/releases/tag/v1.4.1",
   "website": "https://amdsree.github.io/nadan-firewall-releases/",
   "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_EN.pdf",
   "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_ML.pdf",
-  "changelog": "v1.4.0: Zero-Trust Permanent Sinkhole for real-world eChallan, PM Kisan, and banking Trojan droppers, invisible Unicode evasion defense, Samsung system updater whitelisting, and dynamic versioning.",
+  "changelog": "v1.4.1: Fix false-positive quarantine on Samsung and OEM preinstalled packages, restore trusted communications suite (WhatsApp, DJI Mimo), and auto-heal misclassified entries.",
   "windows": {
     "latestVersion": "2.4.1",
     "versionCode": 241,
