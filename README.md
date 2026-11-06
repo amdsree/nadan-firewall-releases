@@ -60,7 +60,7 @@ On-device Zero-Trust firewall and anti-malware guard.
 **Android Features:**
 * **Zero-Trust Local Loopback Tunnel**: Inspects all TCP/UDP/DNS packets locally in volatile memory with 0 telemetry.
 * **Social Engineering Trojan Shield**: Quarantines malicious WhatsApp/Telegram scam APKs (wedding cards, fake e-Challan, KSEB notices, loan apps).
-* **79,999-Domain Threat Directory**: Blocks ad networks, trackers, and telemetry backdoors with 1-tap snoozing.
+* **76,732-Domain Threat Directory**: Blocks ad networks, trackers, and telemetry backdoors with 1-tap snoozing.
 * **Anti-Displacement Guard**: Prevents third-party apps from hijacking or disabling the VPN tunnel.
 * **Zero Battery Drain**: 0.0% CPU usage while idle.
 

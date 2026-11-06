@@ -1,12 +1,12 @@
 {
-  "latestVersion": "1.3.9",
-  "versionCode": 40,
-  "downloadUrl": "https://github.com/amdsree/nadan-firewall-releases/releases/latest/download/NadanFirewall-v1.3.9.apk",
-  "releasePage": "https://github.com/amdsree/nadan-firewall-releases/releases/latest",
+  "latestVersion": "1.4.0",
+  "versionCode": 46,
+  "downloadUrl": "https://github.com/amdsree/nadan-firewall-releases/releases/download/v1.4.0/NadanFirewall-v1.4.0.apk",
+  "releasePage": "https://github.com/amdsree/nadan-firewall-releases/releases/tag/v1.4.0",
   "website": "https://amdsree.github.io/nadan-firewall-releases/",
   "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_EN.pdf",
   "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_ML.pdf",
-  "changelog": "v1.3.9: High-Speed On-Device Ad Shield DNS resolver (76,000+ domains), always-visible YouTube / Chrome / Play Store with granular block enforcement, and RFC 8305 latency elimination for unthrottled 200+ Mbps line speed.",
+  "changelog": "v1.4.0: Zero-Trust Permanent Sinkhole for real-world eChallan, PM Kisan, and banking Trojan droppers, invisible Unicode evasion defense, Samsung system updater whitelisting, and dynamic versioning.",
   "windows": {
     "latestVersion": "2.4.1",
     "versionCode": 241,
