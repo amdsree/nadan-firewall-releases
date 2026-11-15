@@ -8,13 +8,15 @@
   "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_ML.pdf",
   "changelog": "v1.5.0: Comprehensive security hardening audit, DNS poisoning defense, provenance-based sideload threat policy, unexported broadcast protection, and PBKDF2 PIN security.",
   "windows": {
-    "latestVersion": "2.4.1",
-    "versionCode": 241,
+    "latestVersion": "2.6.0",
+    "versionCode": 260,
+    "setupSha256": "f723c2a587784006d9ed0382854d172e46ab86e4ae8bcd19d0347b6b086edcf2",
+    "portableSha256": "3fdf1eb6affe94b0723be9ce6dd1a0172f5417e8606e27e78c763e6327f64084",
     "setupDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup.exe",
     "portableDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip",
     "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf",
     "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_ML.pdf",
     "repository": "https://github.com/amdsree/kerala-firewall",
-    "changelog": "v2.4.1: Native WFP Sublayer filter, In-Memory DNS Proxy sinkhole, single-instance tray icon guard, and elevated Windows Task Scheduler startup."
+    "changelog": "v2.6.0: Enterprise Security Hardening - fail-closed deny-by-default kernel rules, machine-scoped DPAPI in admin %ProgramData%, binary hash pinning, 250ms native TCP/UDP table polling, and script-block inspection."
   }
 }
