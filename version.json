@@ -8,15 +8,15 @@
   "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_ML.pdf",
   "changelog": "v1.5.0: Comprehensive security hardening audit, DNS poisoning defense, provenance-based sideload threat policy, unexported broadcast protection, and PBKDF2 PIN security.",
   "windows": {
-    "latestVersion": "2.6.0",
-    "versionCode": 260,
-    "setupSha256": "8261fafb2a1c8bd50c5ed40bb029f953d034624f63bfb365e5e9e259dc5eb06f",
-    "portableSha256": "196c7e8e51a4922ace1f7e3c855d9a769a271778b4c61ad673b3d4ac8e7aefd0",
+    "latestVersion": "2.7.0",
+    "versionCode": 270,
+    "setupSha256": "3a57300b0b2046ee64bff971bb42ab3eb18b77dab382d11d96782315c572119d",
+    "portableSha256": "b4e41b244f046aa4643cd9940086e576db3b8008324511500def7dd6c2a33c36",
     "setupDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup.exe",
     "portableDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip",
     "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf",
     "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_ML.pdf",
     "repository": "https://github.com/amdsree/kerala-firewall",
-    "changelog": "v2.6.0: Enterprise Security Hardening - fail-closed deny-by-default kernel rules, machine-scoped DPAPI in admin %ProgramData%, binary hash pinning, 250ms native TCP/UDP table polling, and script-block inspection."
+    "changelog": "v2.7.0: Zero-Trust Security Sentinel - fail-closed deny-by-default kernel rules, automated developer environment whitelisting in Windows Mode, centered foreground alert dialogs, and 250ms native socket monitoring."
   }
 }
