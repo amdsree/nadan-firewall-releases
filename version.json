@@ -8,15 +8,15 @@
   "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_ML.pdf",
   "changelog": "v1.5.0: Comprehensive security hardening audit, DNS poisoning defense, provenance-based sideload threat policy, unexported broadcast protection, and PBKDF2 PIN security.",
   "windows": {
-    "latestVersion": "2.7.0",
-    "versionCode": 270,
-    "setupSha256": "3a57300b0b2046ee64bff971bb42ab3eb18b77dab382d11d96782315c572119d",
-    "portableSha256": "b4e41b244f046aa4643cd9940086e576db3b8008324511500def7dd6c2a33c36",
+    "latestVersion": "2.7.1",
+    "versionCode": 271,
+    "setupSha256": "ab5cc14a095cdbd7b6de7afb4e2018e36b43ed3e545614631003b106114c2cc5",
+    "portableSha256": "0bd93d62e4744ef76f44cdc314cbb86bcc5a3fb0c334292cc440b99ecf6d125f",
     "setupDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup.exe",
     "portableDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip",
     "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf",
     "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_ML.pdf",
     "repository": "https://github.com/amdsree/kerala-firewall",
-    "changelog": "v2.7.0: Zero-Trust Security Sentinel - fail-closed deny-by-default kernel rules, automated developer environment whitelisting in Windows Mode, centered foreground alert dialogs, and 250ms native socket monitoring."
+    "changelog": "v2.7.1: Every-connection approval prompts - inbound listeners are asked before accepting connections, UDP-only programs are no longer blocked silently, Strict mode asks about developer tools, and an optional per-connection mode asks for each outbound destination; plus a QA hardening pass (prompt foregrounding, stale-answer guard, direction-safe rules)."
   }
 }
