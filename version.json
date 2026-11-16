@@ -10,8 +10,8 @@
   "windows": {
     "latestVersion": "2.6.0",
     "versionCode": 260,
-    "setupSha256": "6730a4a42659e53027d77f7b0dac7db319c7fc734f6060469d7c671d0c85fba5",
-    "portableSha256": "8c9bf88983d994399a51f3fe7fba7b756d0e16266a8df3c1192d0302e72064ca",
+    "setupSha256": "8261fafb2a1c8bd50c5ed40bb029f953d034624f63bfb365e5e9e259dc5eb06f",
+    "portableSha256": "196c7e8e51a4922ace1f7e3c855d9a769a271778b4c61ad673b3d4ac8e7aefd0",
     "setupDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup.exe",
     "portableDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip",
     "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf",
