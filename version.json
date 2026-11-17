@@ -8,15 +8,16 @@
   "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_ML.pdf",
   "changelog": "v1.5.1: Universal DNS-Guard routing (96% ad/tracker blocking without payload throttling), DoH/DoT bypass interception, app-safe allowlisting, and expanded tracker coverage.",
   "windows": {
-    "latestVersion": "2.7.3",
-    "versionCode": 273,
-    "setupSha256": "21e54bea04dc0b859f695e1fe055e52ce60bb0c18e658d6e9ef3ef2f373bbeed",
-    "portableSha256": "3fae901197e401a93f24bccb4ffb8d2e501cb10541e634763b507bed7a5a2b03",
-    "setupDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup.exe",
+    "latestVersion": "2.7.4",
+    "versionCode": 274,
+    "setupSha256": "b231d21016e1fdd803239a04fd032ea8967a07d27ff2d591a123f2a0b27e7963",
+    "portableSha256": "07009ad2418405047563d76e87e20ecb48fc00d30b753495e830a459686ba663",
+    "setupSize": 35134839,
+    "setupDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.7.4.exe",
     "portableDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip",
     "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf",
     "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_ML.pdf",
     "repository": "https://github.com/amdsree/kerala-firewall",
-    "changelog": "v2.7.3: Windows startup protection can no longer be silently disabled - the scheduled task runs on battery, is not stopped when the charger is unplugged, has no 72-hour execution limit, retries missed starts, and is verified and repaired on every launch. The SYSTEM boot guard applies fail-closed even before the app has ever run."
+    "changelog": "v2.7.4: Fixes silent blocking in Windows and Strict modes without authorization popups: adds WFP Security 5157 drop auditing for synchronously blocked connections, thread-local COM rule initialization, Antigravity companion language_server.exe prompts, Defender binary allowances, popup queue dedupe and dismiss handling, and versioned setup installer filenames."
   }
 }
