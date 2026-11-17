@@ -8,15 +8,15 @@
   "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_ML.pdf",
   "changelog": "v1.5.0: Comprehensive security hardening audit, DNS poisoning defense, provenance-based sideload threat policy, unexported broadcast protection, and PBKDF2 PIN security.",
   "windows": {
-    "latestVersion": "2.7.2",
-    "versionCode": 272,
-    "setupSha256": "391ba7a14606be8248c9dbb60a0ca0385ce598f5d07b035060f7d61a2faf2667",
-    "portableSha256": "98c6b11d526b7618b8da2827c2e966fc983cc87eef5818641c8d74fe91abf4db",
+    "latestVersion": "2.7.3",
+    "versionCode": 273,
+    "setupSha256": "21e54bea04dc0b859f695e1fe055e52ce60bb0c18e658d6e9ef3ef2f373bbeed",
+    "portableSha256": "3fae901197e401a93f24bccb4ffb8d2e501cb10541e634763b507bed7a5a2b03",
     "setupDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup.exe",
     "portableDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip",
     "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf",
     "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_ML.pdf",
     "repository": "https://github.com/amdsree/kerala-firewall",
-    "changelog": "v2.7.2: Fixes silent blocking of helper processes that start after the firewall applies its policy - trusted developer tools are settled as soon as they are observed, so an IDE language server can complete sign-in instead of failing with 'access denied'; Strict mode asks once for that permit."
+    "changelog": "v2.7.3: Windows startup protection can no longer be silently disabled - the scheduled task runs on battery, is not stopped when the charger is unplugged, has no 72-hour execution limit, retries missed starts, and is verified and repaired on every launch. The SYSTEM boot guard applies fail-closed even before the app has ever run."
   }
 }
