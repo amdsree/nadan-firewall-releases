@@ -1,12 +1,12 @@
 {
-  "latestVersion": "1.5.1",
-  "versionCode": 49,
-  "downloadUrl": "https://github.com/amdsree/nadan-firewall-releases/releases/download/v1.5.1/NadanFirewall-v1.5.1.apk",
-  "releasePage": "https://github.com/amdsree/nadan-firewall-releases/releases/tag/v1.5.1",
+  "latestVersion": "1.5.2",
+  "versionCode": 50,
+  "downloadUrl": "https://github.com/amdsree/nadan-firewall-releases/releases/download/v1.5.2/NadanFirewall-v1.5.2.apk",
+  "releasePage": "https://github.com/amdsree/nadan-firewall-releases/releases/tag/v1.5.2",
   "website": "https://amdsree.github.io/nadan-firewall-releases/",
   "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_EN.pdf",
   "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_ML.pdf",
-  "changelog": "v1.5.1: Universal DNS-Guard routing (96% ad/tracker blocking without payload throttling), DoH/DoT bypass interception, app-safe allowlisting, and expanded tracker coverage.",
+  "changelog": "v1.5.2: Allow official Indian government apps (including Kerala Police com.keralapolice, in.gov.*, and com.nic.*) only when verified from Play Store.",
   "windows": {
     "latestVersion": "2.7.4",
     "versionCode": 274,
