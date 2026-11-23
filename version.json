@@ -17,7 +17,8 @@
     "portableDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip",
     "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf",
     "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_ML.pdf",
-    "repository": "https://github.com/amdsree/kerala-firewall",
-    "changelog": "v2.8.0: Approvals now have a lifetime - every prompt offers This run only / Until restart (default) / Always, so a click no longer becomes a permanent rule. A signed program that updates itself is asked again instead of being silently blocked forever (fixes Microsoft Edge not connecting after an update). Every blocked connection shows a plain-language reason in a new Why column, and the dashboard verifies its rules by reading them back out of Windows Firewall instead of claiming success blindly."
+    "repository": "https://github.com/amdsree/nadan-firewall-releases/releases",
+    "changelog": "v2.8.0: Approvals now have a lifetime - every prompt offers This run only / Until restart (default) / Always, so a click no longer becomes a permanent rule. A signed program that updates itself is asked again instead of being silently blocked forever (fixes Microsoft Edge not connecting after an update). Every blocked connection shows a plain-language reason in a new Why column, and the dashboard verifies its rules by reading them back out of Windows Firewall instead of claiming success blindly.",
+    "releasePage": "https://github.com/amdsree/nadan-firewall-releases/releases/tag/v2.8.0"
   }
 }
