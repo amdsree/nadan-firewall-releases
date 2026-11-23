@@ -8,16 +8,16 @@
   "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_ML.pdf",
   "changelog": "v1.5.2: Allow official Indian government apps (including Kerala Police com.keralapolice, in.gov.*, and com.nic.*) only when verified from Play Store.",
   "windows": {
-    "latestVersion": "2.7.4",
-    "versionCode": 274,
-    "setupSha256": "b231d21016e1fdd803239a04fd032ea8967a07d27ff2d591a123f2a0b27e7963",
-    "portableSha256": "07009ad2418405047563d76e87e20ecb48fc00d30b753495e830a459686ba663",
-    "setupSize": 35134839,
-    "setupDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.7.4.exe",
+    "latestVersion": "2.8.0",
+    "versionCode": 280,
+    "setupSha256": "ff5fa3aab06fc5d5da2cb0fcde59cb3eb604de64eb899617129d7225c30e3184",
+    "portableSha256": "29e40ad564b36e8c1762c92f48721a16d9a51aa86c59f336dd41ec9c75d90b53",
+    "setupSize": 35340833,
+    "setupDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.8.0.exe",
     "portableDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip",
     "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf",
     "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_ML.pdf",
     "repository": "https://github.com/amdsree/kerala-firewall",
-    "changelog": "v2.7.4: Fixes silent blocking in Windows and Strict modes without authorization popups: adds WFP Security 5157 drop auditing for synchronously blocked connections, thread-local COM rule initialization, Antigravity companion language_server.exe prompts, Defender binary allowances, popup queue dedupe and dismiss handling, and versioned setup installer filenames."
+    "changelog": "v2.8.0: Approvals now have a lifetime - every prompt offers This run only / Until restart (default) / Always, so a click no longer becomes a permanent rule. A signed program that updates itself is asked again instead of being silently blocked forever (fixes Microsoft Edge not connecting after an update). Every blocked connection shows a plain-language reason in a new Why column, and the dashboard verifies its rules by reading them back out of Windows Firewall instead of claiming success blindly."
   }
 }

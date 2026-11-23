@@ -13,8 +13,8 @@
   <a href="https://github.com/amdsree/nadan-firewall-releases/releases/latest/download/NadanFirewall-v1.3.9.apk">
     <img src="https://img.shields.io/badge/Android-APK%20v1.3.9-00e676?style=for-the-badge&logo=android&logoColor=white" alt="Download Android APK">
   </a>
-  <a href="https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.7.4.exe">
-    <img src="https://img.shields.io/badge/Windows-Setup%20v2.7.4-00b4d8?style=for-the-badge&logo=windows&logoColor=white" alt="Download Windows Setup">
+  <a href="https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.8.0.exe">
+    <img src="https://img.shields.io/badge/Windows-Setup%20v2.8.0-00b4d8?style=for-the-badge&logo=windows&logoColor=white" alt="Download Windows Setup">
   </a>
   <a href="https://amdsree.github.io/nadan-firewall-releases/">
     <img src="https://img.shields.io/badge/Official_Website-Visit-00e5ff?style=for-the-badge" alt="Visit Website">
@@ -28,10 +28,10 @@ Visit our official releases site: **[https://amdsree.github.io/nadan-firewall-re
 
 ---
 
-### 💻 Windows Desktop Edition (v2.7.4 Pro)
+### 💻 Windows Desktop Edition (v2.8.0 Pro)
 Native Windows cyber sentinel powered by the Windows Filtering Platform (WFP).
-* **[NadanFirewall_Setup_v2.7.4.exe](https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.7.4.exe)**: Complete installer with desktop shortcuts, watchdog service, and uninstaller (~35.1 MB).
-* **[NadanFirewall_Portable.zip](https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip)**: Standalone portable edition, zero installation required (~43.5 MB).
+* **[NadanFirewall_Setup_v2.8.0.exe](https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.8.0.exe)**: Complete installer with desktop shortcuts, watchdog service, and uninstaller (~33.7 MB).
+* **[NadanFirewall_Portable.zip](https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip)**: Standalone portable edition, zero installation required (~41.7 MB).
 * **[Windows Guide (English PDF)](https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf)**: Step-by-step user guide for Windows.
 * **[വിൻഡോസ് സഹായി (Malayalam PDF)](https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_ML.pdf)**: മലയാളം ഉപയോക്തൃ സഹായി.
 
@@ -43,6 +43,10 @@ Native Windows cyber sentinel powered by the Windows Filtering Platform (WFP).
 
 **Windows Features:**
 * **Air-Gap Sandbox Killswitch**: Instant 1-click total network isolation.
+* **Answer durations**: every approval can be kept *for this run*, *until the next restart* (the default) or *always* - no careless click becomes a permanent rule.
+* **A reason for every block**: the traffic table explains each stop in plain words (saved rule, waiting for your answer, file changed, temporary answer lapsed, threat detection, ...).
+* **Verified enforcement**: after every apply the rules are read back out of Windows Firewall; the dashboard only claims the protection it confirmed.
+* **Self-updating programs ask again**: a changed executable loses its old approval instead of being blocked silently forever.
 * **Preset Silent Whitelist Mode**: Pre-configured rules for developer apps (VS Code, Cursor, Chrome, Slack) while silently blocking background telemetry.
 * **Pro-Level MSX Decoding Shield**: Intercepts obfuscated PowerShell (`-enc`), `certutil -decode`, `mshta`, and rogue MSX payload unpacking decoders.
 * **Floating Desktop HUD Widget**: Lightweight translucent overlay showing live upload/download speed and packet counters.
