@@ -8,17 +8,17 @@
   "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_User_Guide_ML.pdf",
   "changelog": "v1.5.2: Allow official Indian government apps (including Kerala Police com.keralapolice, in.gov.*, and com.nic.*) only when verified from Play Store.",
   "windows": {
-    "latestVersion": "2.8.0",
-    "versionCode": 280,
-    "setupSha256": "ff5fa3aab06fc5d5da2cb0fcde59cb3eb604de64eb899617129d7225c30e3184",
-    "portableSha256": "29e40ad564b36e8c1762c92f48721a16d9a51aa86c59f336dd41ec9c75d90b53",
-    "setupSize": 35340833,
-    "setupDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.8.0.exe",
+    "latestVersion": "2.8.1",
+    "versionCode": 281,
+    "setupSha256": "a7a2f8270a15ca859e472e891e193402c81d45967c4a33b8ed97a55b86f8fcd2",
+    "portableSha256": "a7854351e4a1eae23cfd162f3fd455554ea639415c9fa741a534533fc8373f16",
+    "setupSize": 35340388,
+    "setupDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.8.1.exe",
     "portableDownloadUrl": "https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip",
     "userGuideEnglish": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf",
     "userGuideMalayalam": "https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_ML.pdf",
     "repository": "https://github.com/amdsree/nadan-firewall-releases/releases",
-    "changelog": "v2.8.0: Approvals now have a lifetime - every prompt offers This run only / Until restart (default) / Always, so a click no longer becomes a permanent rule. A signed program that updates itself is asked again instead of being silently blocked forever (fixes Microsoft Edge not connecting after an update). Every blocked connection shows a plain-language reason in a new Why column, and the dashboard verifies its rules by reading them back out of Windows Firewall instead of claiming success blindly.",
-    "releasePage": "https://github.com/amdsree/nadan-firewall-releases/releases/tag/v2.8.0"
+    "changelog": "v2.8.1: Fixes browsers being cut off with no rule behind it. The fan-out heuristic treated a signed browser whose signature was still being verified as an unsigned threat after eight peer addresses, and the threat response then tore down every established connection of that process - so Microsoft Edge failed to load pages while the firewall rule list was empty and the outbound policy said Allow. Fan-out is now only evidence for a binary that is known to be unsigned, severing is reserved for BLOCK_APP detections, and an advisory detection no longer skips the allow/block/prompt decision.",
+    "releasePage": "https://github.com/amdsree/nadan-firewall-releases/releases/tag/v2.8.1"
   }
 }

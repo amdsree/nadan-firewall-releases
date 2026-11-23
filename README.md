@@ -13,8 +13,8 @@
   <a href="https://github.com/amdsree/nadan-firewall-releases/releases/latest/download/NadanFirewall-v1.3.9.apk">
     <img src="https://img.shields.io/badge/Android-APK%20v1.3.9-00e676?style=for-the-badge&logo=android&logoColor=white" alt="Download Android APK">
   </a>
-  <a href="https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.8.0.exe">
-    <img src="https://img.shields.io/badge/Windows-Setup%20v2.8.0-00b4d8?style=for-the-badge&logo=windows&logoColor=white" alt="Download Windows Setup">
+  <a href="https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.8.1.exe">
+    <img src="https://img.shields.io/badge/Windows-Setup%20v2.8.1-00b4d8?style=for-the-badge&logo=windows&logoColor=white" alt="Download Windows Setup">
   </a>
   <a href="https://amdsree.github.io/nadan-firewall-releases/">
     <img src="https://img.shields.io/badge/Official_Website-Visit-00e5ff?style=for-the-badge" alt="Visit Website">
@@ -28,9 +28,9 @@ Visit our official releases site: **[https://amdsree.github.io/nadan-firewall-re
 
 ---
 
-### 💻 Windows Desktop Edition (v2.8.0 Pro)
+### 💻 Windows Desktop Edition (v2.8.1 Pro)
 Native Windows cyber sentinel powered by the Windows Filtering Platform (WFP).
-* **[NadanFirewall_Setup_v2.8.0.exe](https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.8.0.exe)**: Complete installer with desktop shortcuts, watchdog service, and uninstaller (~33.7 MB).
+* **[NadanFirewall_Setup_v2.8.1.exe](https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Setup_v2.8.1.exe)**: Complete installer with desktop shortcuts, watchdog service, and uninstaller (~33.7 MB).
 * **[NadanFirewall_Portable.zip](https://amdsree.github.io/nadan-firewall-releases/NadanFirewall_Portable.zip)**: Standalone portable edition, zero installation required (~41.7 MB).
 * **[Windows Guide (English PDF)](https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_EN.pdf)**: Step-by-step user guide for Windows.
 * **[വിൻഡോസ് സഹായി (Malayalam PDF)](https://amdsree.github.io/nadan-firewall-releases/Nadan_Firewall_Windows_Guide_ML.pdf)**: മലയാളം ഉപയോക്തൃ സഹായി.
